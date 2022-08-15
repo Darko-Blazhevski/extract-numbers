@@ -12,13 +12,13 @@ namespace extract_numbers
                 imput = Console.ReadLine();
             } while (string.IsNullOrEmpty(imput));
 
-            string inter;
+            int inter;
             inter = ekstrakcija(imput);
             Console.WriteLine(inter);
 
         }
 
-        private static string ekstrakcija(string imput)
+        private static int ekstrakcija(string imput)
         {
             string inter = string.Empty;
             byte[] asciiBytes = Encoding.ASCII.GetBytes(imput);
@@ -33,8 +33,8 @@ namespace extract_numbers
                     continue;
                 }
             }
-
-            return inter;
+            int a =int.Parse(inter);
+            return a;
         }
     }
 }
