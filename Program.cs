@@ -10,7 +10,7 @@ namespace extract_numbers
             do
             {
                 imput = Console.ReadLine();
-            } while (imput == string.Empty);
+            } while (string.IsNullOrEmpty(imput));
 
             string inter;
             inter = ekstrakcija(imput);
