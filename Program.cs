@@ -6,7 +6,7 @@ namespace extract_numbers
     {
         static void Main(string[] args)
         {
-            string imput;
+            string? imput;
             do
             {
                 imput = Console.ReadLine();
